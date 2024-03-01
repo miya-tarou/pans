@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>給食パン屋</title>
+  <link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/102784267/233595853-dc3b5af6-5fdc-4534-97c2-3b11ce2a39fa.png" width="48">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSSを読み込むため、以下のタグは削除しないでください -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- このHTMLファイルは自由に編集していただいて構いません -->
+
+  <header id="header">
+    <!-- ヘッダー -->
+    <!-- ロゴ画像を必ず含めてください -->
+  <!-- <div id="loading">
+    <p>Loading...</p>
+  </div> -->
+    <h1 class="logo"><a href="#"><img src="https://user-images.githubusercontent.com/102784267/233595856-c124accc-571b-4490-ae97-090d07d8f737.png" width="312"alt="給食パン屋">
+    </a></h1>
+    <h1 class="logo-2"><a href="#"><img src="https://user-images.githubusercontent.com/102784267/233595864-a9149c3d-c29a-45d1-94a8-8f7558ec8cdc.png" width="177" alt="給食パン屋"></a></h1>
+    <div class="sp-menu">
+      <span><i class="bi bi-list" id="open" alt="メニュー"></i></span>
+    </div>
+    <div class="pc-menu">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#info">Infomation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="overlay">
+    <i class="bi bi-x" id="close"></i>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#info">Infomation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="hero">
+    <!-- ヒーローエリア -->
+    <!-- キャッチコピーを必ず含めてください -->
+    <!-- 背景に画像を配置してください -->
+    <div class="bg">
+      <span class="mask">
+        <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" class="top-pic" alt="美味しいコッペパン">
+
+        <span class="cap"><img src="https://user-images.githubusercontent.com/102784267/233591841-7b591892-74c9-446a-9dfb-b1235a53f027.png" class="beard" alt="髭の店長"><h1>思い出の給食パンをリーズナブルに、いつでも提供したい<br>
+          そんな店主の想いが、お店になりました</h1><img src="https://user-images.githubusercontent.com/102784267/233593932-75f65e5b-531d-4a0c-ba57-929bb44c6dbd.png" class="pic-1"><img src="https://user-images.githubusercontent.com/102784267/233593914-d9353e0e-3ffa-4bd9-9654-26adf204550f.png" class="pic-2"><img src="https://user-images.githubusercontent.com/102784267/233593932-75f65e5b-531d-4a0c-ba57-929bb44c6dbd.png" class="pic-1"><img src="https://user-images.githubusercontent.com/102784267/233593914-d9353e0e-3ffa-4bd9-9654-26adf204550f.png" class="pic-2"><img src="https://user-images.githubusercontent.com/102784267/233593932-75f65e5b-531d-4a0c-ba57-929bb44c6dbd.png" class="pic-1"><img src="https://user-images.githubusercontent.com/102784267/233593914-d9353e0e-3ffa-4bd9-9654-26adf204550f.png" class="pic-2"><img src="https://user-images.githubusercontent.com/102784267/233593932-75f65e5b-531d-4a0c-ba57-929bb44c6dbd.png" class="pic-1"></span>
+      </span>
+
+
+    </div>
+    <img src="https://user-images.githubusercontent.com/102784267/233593891-60f22d16-cb90-4f6d-a7ba-1853abfe5cd7.png" width="100" class="badge" alt="回るコッペパン">
+    <p class="point-me">
+      \Point me!/
+    </p>
+    <div class="container">
+      <ul class="mask-2">
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598811-61025a54-411a-4ce1-b0bb-a07adcb228da.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598650-d0a36fe4-54ca-4e5d-b8ab-2839dea20d85.png" width="100" class="pics">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598932-7d1d7024-bc90-43c7-8e72-689096d0a4c6.png" width="100">
+        </li>
+      </ul>
+      <ul class="mask">
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598811-61025a54-411a-4ce1-b0bb-a07adcb228da.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598650-d0a36fe4-54ca-4e5d-b8ab-2839dea20d85.png" width="100" class="pics">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598932-7d1d7024-bc90-43c7-8e72-689096d0a4c6.png" width="100">
+        </li>
+      </ul>
+      <ul class="mask">
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598811-61025a54-411a-4ce1-b0bb-a07adcb228da.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" width="100">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598650-d0a36fe4-54ca-4e5d-b8ab-2839dea20d85.png" width="100" class="pics">
+        </li>
+        <li>
+          <img src="https://user-images.githubusercontent.com/102784267/233598932-7d1d7024-bc90-43c7-8e72-689096d0a4c6.png" width="100">
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <!-- 商品紹介 -->
+    <section id="products">
+      <div class="stamps">
+        <div class="stamp">
+          <img src="https://user-images.githubusercontent.com/102784267/233593896-bf3c3e55-bce6-42ba-a252-4befe3afb880.png" width="50" class="milk" alt="milk">
+          <img src="https://user-images.githubusercontent.com/102784267/233593918-0c73e9bb-f8a3-4c5c-888a-48f7a60d2097.png" width="50" class="school" alt="school">
+        </div>
+        <div class="stamp">
+          <img src="https://user-images.githubusercontent.com/102784267/233593896-bf3c3e55-bce6-42ba-a252-4befe3afb880.png" width="50" class="milk" alt="milk">
+          <img src="https://user-images.githubusercontent.com/102784267/233593918-0c73e9bb-f8a3-4c5c-888a-48f7a60d2097.png" width="50" class="school"alt="school">
+        </div>
+      </div>
+
+      <h2 id="profile"><span>Products</span>商品紹介</h2>
+      <div class="products-list">
+
+        <section class="product">
+          <a href="#" class="bread">
+            <img src="https://user-images.githubusercontent.com/102784267/233601083-5b2e3ea7-4594-437b-9b41-787fe7e4a138.png" width="200" height="100" class="products-img" alt="こっぺぱん">
+            <p class="bg-yellow">
+              税込み180円
+            </p>
+            <h3>こっぺぱん</h3>
+            <p class="exp">
+              ツヤのあるふわふわのコッペパン。そのままでもやさしい甘みが自慢です。もちろん、ジャムをつけてもおいしくお召し上がりいただけます（レジ横でジャムも販売しています）。
+            </p>
+          </a>
+        </section>
+
+        <section class="product">
+          <a href="#" class="bread">
+            <img src="https://user-images.githubusercontent.com/102784267/233601087-a4d5c162-4fe1-40dc-9175-f358f9f2631d.png" width="200" class="products-img" alt="ツイストパン">
+            <p class="bg-yellow">
+              税込み170円
+            </p>
+            <h3>ツイストパン</h3>
+            <p class="exp">
+              モチモチとした食感が味わえます。卵とバターの風味を強く感じられるところが当店のこだわりポイント。オーブントースターで1分ほど焼いてからお召し上がりいただくのがおすすめです。
+            </p>
+          </a>
+        </section>
+
+        <section class="product">
+          <a href="#" class="bread">
+            <img src="https://user-images.githubusercontent.com/102784267/233601066-3e9b5d94-e79c-4f62-9ef9-e7cdd187c227.png" width="200" class="products-img" alt="まるぱん">
+            <p class="bg-yellow">
+              税込み160円
+            </p>
+            <h3>まるぱん</h3>
+            <p class="exp">
+              あっさりとして素朴な味わいのシンプルなパンです。お好みでバターをつけたり、半分に割ってハンバーグやミネストローネと一緒に食べても最高です！
+            </p>
+          </a>
+        </section>
+
+        <!--/products-list-->
+      </div>
+    </section>
+  </section>
+  <p class="more">
+    <a href="#">もっと見る</a>
+  </p>
+  
+  <section id="news">
+    <!-- お知らせ -->
+    <h2 id="know"><span>News</span>お知らせ</h2>
+    <div class="news-area">
+      <ul>
+        <li><a href="#"><article>
+          <time datetime="2024-02-28">2024.02.28 new!</time>
+          <h3>新しく登場しました！</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+        <li><a href="#"><article>
+          <time datetime="2024-02-21">2024.02.21</time>
+          <h3>春のキャンペーンスタート</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+        <li><a href="#"><article>
+          <time datetime="2024-02-10">2024.02.10</time>
+          <h3>春のお勧めパン</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+        <li><a href="#"><article>
+          <time datetime="2024-02-03">2024.02.03</time>
+          <h3 class="br">塗り絵募集</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+        <li><a href="#"><article>
+          <time datetime="2024-01-29">2024.01.29</time>
+          <h3>二月の定休日</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+        <li><a href="#"><article>
+          <time datetime="2024-01-15">2024.01.15</time>
+          <h3>座れるお席作りました</h3>
+          <p>くわしくはこちら</p>
+          <img src="https://user-images.githubusercontent.com/102784267/233591824-bff5a41c-d4e6-450c-ad65-1b408107249a.png" width="40">
+        </article>
+        </a></li>
+      </ul>
+    </div>
+    <p class="button">
+        <a href="#">過去のお知らせを見る</a>
+      </p>
+  </section>
+
+  <section id="info">
+    <!-- 店舗情報 -->
+    <h2 class="info"><span>Infomation</span>店舗情報</h2>
+    <div class="infomation">
+      <div>
+        <img src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png" width="400">
+        <a href="#">Google Mapへ</a>
+      </div>
+      <div class="address fadein">
+        <table>
+          <tr>
+            <th>屋号</th>
+            <td>給食パン屋</td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>東京都二五六区2-5-6</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>256駅西口から徒歩５分</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>00-0000-0000</td>
+          </tr>
+          <tr>
+            <th>ホームページ</th>
+            <td>https://○○○○.com</td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>9:00～19:00</td>
+          </tr>
+          <tr>
+            <th>駐車場</th>
+            <td>店舗前3台分あります</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+</section>
+<!-- お問い合わせ -->
+<section id="contact">
+  <div class="wrapper">
+    <h2 class="contact"><span>Contact</span>お問い合わせ</h2>
+    <form action="#">
+      <div>
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="your-name">
+      </div>
+      <div>
+        <label for="e-mail">メールアドレス</label>
+        <input type="e-mail" id="email" name="your-e-mail">
+      </div>
+      <div>
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="your-message"></textarea>
+      </div>
+      <p class="button"><a href="#">送信</a></p>
+    </form>
+  </div>
+</section>
+
+  <footer id="footer">
+    <!-- フッター -->
+    <!-- (c) 256times.com を必ず含めてください -->
+    <p class="pageTop">
+      <a href="#header">TOP</a>
+    </p>
+    <small><a href="#">&copy; 256times.com</a></small>
+    <div class="sns">
+      <a href="#"><i class="bi bi-instagram" alt="インスタ"></i></a>
+      <a href="#"><i class="bi bi-twitter" alt="ツイッター"></i></a>
+      <a href="#"><i class="bi bi-line" alt="ライン"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
