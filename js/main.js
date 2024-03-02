@@ -24,14 +24,14 @@
       translate: ['0 100px', 0]
     };
     const options = {
-      duration: 600,
-      delay: i * 600,
+      duration: 800,
+      delay: i * 800,
       fill: 'forwards'
     };
     product[i].animate(keyframes, options);
   }
   // 商品説明　見出し
-  const profile = entries => {
+  const profile = (entries) => {
     const keyframe = {
       opacity: [0, 1],
       rotate: ['20deg 0', 0]
@@ -44,7 +44,7 @@
 }
 
 // お知らせの文字
-const animateScroll = (entries, obs) => {
+const animateScroll = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.animate(
@@ -58,6 +58,7 @@ const animateScroll = (entries, obs) => {
           fill: 'forwards'
         }
       );
+      
     }
   });
 };
@@ -68,7 +69,7 @@ scrollElements.forEach((scrollElement) => {
 });
 
 // 店舗紹介の文字
-const animatedScroll = (entries, obs) => {
+const animatedScroll = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.animate(
@@ -82,6 +83,7 @@ const animatedScroll = (entries, obs) => {
           fill: 'forwards'
         }
       );
+      
     }
   });
 };
@@ -93,7 +95,7 @@ scrollsElements.forEach((scrollsElement) => {
 
 
 // お問い合わせの文字
-const animatingScroll = (entries, obs) => {
+const animatingScroll = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.animate(
@@ -107,6 +109,7 @@ const animatingScroll = (entries, obs) => {
           fill: 'forwards'
         }
       );
+      
     }
   });
 };
@@ -157,32 +160,32 @@ scrollingElements.forEach((scrollingElement) => {
 //           );
 // });
 
-// // コンタクトの文字 ふわっと現れるアイテムの設定
-// const animateFade = (entries、obs) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//     entry.target.animate(
-//       {
-//         opacity: [0, 1],
-//         filter: ['blur(.4rem)', 'blur(0)'],
-//         translate: ['0 4rem', 0],
-//       },
-//       {
-//         duration: 2000,
-//         easing: 'ease',
-//         fill: 'forwards',
-//       }
-//       );
-//       obs.unobserve(entry.target);
-//   }
-//   });
-// };
-// const fadeObserber = new IntersectionObserver(animateFade);
+//  ふわっと現れるアイテムの設定
+const animateFade = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+    entry.target.animate(
+      {
+        opacity: [0, 1],
+        filter: ['blur(.4rem)', 'blur(0)'],
+        translate: ['0 4rem', 0],
+      },
+      {
+        duration: 2000,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+      );
+      
+  }
+  });
+};
+const fadeObserver = new IntersectionObserver(animateFade);
 
-// const fadeElements = document.querySelectorAll('.fadein');
-// fadeElements.forEach((fadeElement) => {
-//   fadeObserver.observe(fadeElement);
-// });
+const fadeElements = document.querySelectorAll('.fadein');
+fadeElements.forEach((fadeElement) => {
+  fadeObserver.observe(fadeElement);
+});
 
 
 
@@ -197,7 +200,7 @@ $(function() {
   var pageTopBtn = $('pageTop');
   pageTopBtn.hide();
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 900) {
       pageTopBtn.fadeIn();
     } else {
       pageTopBtn.fadeOut();
@@ -208,7 +211,7 @@ $(function() {
       {
         scrollTop: 0
       },
-      500
+      1000
     );
     return false;
   });
